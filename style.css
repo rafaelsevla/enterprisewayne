@@ -1,3 +1,48 @@
-* {
+html {
+  background-image: url(assets/img/bats.jpg);
+  background-size: 100% 575px;
+  background-repeat: repeat-x;
   background-color: #000;
+  opacity: 0;
+}
+
+body {
+  max-height: 575px;
+}
+
+body img {
+  width: 100%;
+  max-height: 575px;
+  opacity: 1;
+}
+
+.opacity-one {
+  opacity: 0.1;
+}
+.opacity-two {
+  opacity: 0.2;
+}
+.opacity-three {
+  opacity: 0.3;
+}
+.opacity-four {
+  opacity: 0.4;
+}
+.opacity-five {
+  opacity: 0.5;
+}
+.opacity-six {
+  opacity: 0.6;
+}
+.opacity-seven {
+  opacity: 0.7;
+}
+.opacity-eight {
+  opacity: 0.8;
+}
+.opacity-nine {
+  opacity: 0.9;
+}
+.opacity-ten {
+  opacity: 1;
 }
