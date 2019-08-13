@@ -6,29 +6,15 @@
   let increase = true;
 
   function decreaseOpacity() {
-    $opacity = $opacity - 0.1;
     setTimeout(() => {
       $html.style.opacity = $opacity;
-      if ($opacity >= 0 && !increase) {
+      if ($opacity <= 1 && increase) {
         decreaseOpacity();
       }
-    }, 150);
-  }
-
-  function increaseOpacity() {
-    setTimeout(() => {
-      $html.style.opacity = $opacity;
-      if ($opacity < 1 && increase) {
-        increaseOpacity();
-      }
-      if ($opacity >= 1) {
-        increase = false;
-        decreaseOpacity();
-      }
-    }, 150);
+    }, 250);
 
     $opacity = $opacity + 0.1;
   }
 
-  increaseOpacity();
+  decreaseOpacity();
 })(window, document);
